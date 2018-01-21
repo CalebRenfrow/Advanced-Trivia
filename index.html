@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    
+
+    <title>Document</title>
+    
+    
+</head>
+<body>
+    
+    <div class = "container">
+    
+            <div class = "col-md-1">
+            </div>
+            
+            <div class = "col-md-10"  id = "title-box">            
+                <div class = "row">
+                    <div class = "col-md-1">
+                    </div>
+                    <div class = "col-md-10 text-center" id = "trivia-title">
+                        <div><h1><strong>Advanced Trivia Game</strong></h1></div>
+                        <p id = "time-show"><span id="time"></span><span id = "seconds-left"> seconds left</span></p>
+                    </div>
+                    <div class = "col-md-1">
+                    </div>
+                </div>
+
+                <div class = "row">
+                        <div class = "col-md-3">
+                        </div>
+                        <div class = "col-md-6 text-center vertical-center">
+                            <div id = "start-box">Start!</div>
+                        </div>
+                        <div class = "col-md-3">
+                        </div>
+                    </div>
+
+                <div class = "row question-boxes question-box1 ">
+                        <div class = "col-md-2">
+                        </div>
+                        <div class = "col-md-10">
+                        <p class = "question">The Mountain chicken is a(n) ...</p>
+                            <ul class="answers">            
+                                    <input type="radio" name="q1" value="a" id="q1a"><label for = "q1a">Amphibian</label>          
+                                    <input type="radio" name="q1" value="b" id="q1b"><label for = "q1b">Fish</label>            
+                                    <input type="radio" name="q1" value="c" id="q1c"><label for = "q1c">Bird</label>            
+                                    <input type="radio" name="q1" value="d" id="q1d"><label for = "q1d">Mammal</label>       
+                            </ul>
+                        </div>
+                </div>
+                <div class = "row question-boxes question-box2">
+                        <div class = "col-md-2">
+                        </div>
+                        <div class = "col-md-10">
+                        <p class = "question">5 * 4 = ?</p>
+                            <ul class="answers">            
+                                    <input type="radio" name="q2" value="a" id="q2a"><label for = "q2a">20</label>          
+                                    <input type="radio" name="q2" value="b" id="q2b"><label for = "q2b">9</label>            
+                                    <input type="radio" name="q2" value="c" id="q2c"><label for = "q2c">1</label>            
+                                    <input type="radio" name="q2" value="d" id="q2d"><label for = "q2d">54</label>       
+                            </ul>
+                        </div>
+                </div>
+                <div class = "row question-boxes question-box3">
+                        <div class = "col-md-2">
+                        </div>
+                        <div class = "col-md-10">
+                            <p class = "question">"The road to hell is paved with ..."</p>
+                            <ul class="answers">            
+                                    <input type="radio" name="q3" value="a" id="q3a"><label for = "q3a">assumptions</label>          
+                                    <input type="radio" name="q3" value="b" id="q3b"><label for = "q3b">evil deeds</label>            
+                                    <input type="radio" name="q3" value="c" id="q3c"><label for = "q3c">asphalt</label>            
+                                    <input type="radio" name="q3" value="d" id="q3d"><label for = "q3d">good intentions</label>       
+                            </ul>
+                        </div>
+                </div>
+                <div class = "row question-boxes question-box4">
+                        <div class = "col-md-2">
+                        </div>
+                        <div class = "col-md-10">
+                        <p class = "question">The 12th letter of the Alphabet is ...</p>
+                            <ul class="answers">            
+                                    <input type="radio" name="q4" value="a" id="q4a"><label for = "q4a">K</label>          
+                                    <input type="radio" name="q4" value="b" id="q4b"><label for = "q4b">M</label>            
+                                    <input type="radio" name="q4" value="c" id="q4c"><label for = "q4c">L</label>            
+                                    <input type="radio" name="q4" value="d" id="q4d"><label for = "q4d">J</label>       
+                            </ul>
+                        </div>
+                </div>
+                <div class = "row question-boxes question-box5">
+                        <div class = "col-md-2">
+                        </div>  
+                        <div class = "col-md-10">
+                        <p class = "question">How many months have 28 days?</p>
+                            <ul class="answers">            
+                                    <input type="radio" name="q5" value="a" id="q5a"><label for = "q5a">6</label>          
+                                    <input type="radio" name="q5" value="b" id="q5b"><label for = "q5b">12</label>            
+                                    <input type="radio" name="q5" value="c" id="q5c"><label for = "q5c">1</label>            
+                                    <input type="radio" name="q5" value="d" id="q5d"><label for = "q5d">10</label>       
+                            </ul>
+                        </div>
+                </div>
+
+                <div class = "row" id = "tally-box">
+                    <div class = "col-md-2">
+                    </div>
+                    <div class = "col-md-5 text-right" id = "append-playAgain">
+                            <p> correct :   <span id = "correct"></span></p>
+                            <p> incorrect :   <span id = "incorrect"></span></p>
+                            <p> unanswered :   <span id = "unanswered"></span></p>
+                            
+                    </div>
+                    <div class = "col-md-5">
+                    </div>
+                </div>
+
+                <div class = "row answered">
+                    <div class = "col-md-1">
+                    </div>  
+                    <div class = "col-md-10 answered-prompt">
+                    <p id = "answered-correct">CORRECT!</p>
+                    <p id = "answered-outOfTime">Times Up!</p>
+                    <p id = "answered-incorrect">WRONG</p>
+                    <p class = "answerPromptBox">The Correct Answer Is: <span id = "answerPrompt"></span></p>
+                    <img id = "question-image">
+                    </div>
+              </div>  
+            </div>
+            
+            <div class = "col-md-1">
+            </div>
+        
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/game.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+body{
+    background-color: rgb(229, 252, 175);
+
+    color: rgb(7, 3, 3);
+  text-align: center;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  margin-top: -10px;
+}
+
+h1{
+  font-size: 75px;
+}
+p{
+  font-size: 50px;
+}
+
+input[type = "radio"]{
+  opacity: 0;
+  width: 0;
+  margin: 0;
+}
+
+label:hover{
+  text-shadow: 1px 1px greenyellow;
+  color:white;
+}
+
+.container{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+#title-box{
+  background-color: rgba(170, 212, 53, 0.527);
+  border: 6px outset yellowgreen;
+  border-radius: 15px;
+  padding-bottom: 8%;
+  padding-top: 2%;
+}
+#trivia-title{
+padding-bottom: 5%;
+}
+#time-show{
+  padding-bottom: -3%;
+}
+
+#start-box{
+  background-color: springgreen;
+  border-radius: 15px;
+  border: 5px solid blue;
+  text-align: center;
+}
+#start-box:hover{
+  background: linear-gradient(rgb(66, 164, 245), white);
+}
+
+.answers{
+  font-size: 20px;
+  padding-bottom: 8%;
+  text-align: left; 
+}
+.question{
+  font-size: 30px;
+  text-align: left;
+}
+label{
+  width: 150px;
+  align-self: right;
+  text-align: left;
+}
+.radio{
+  padding-right: 25px;
+}
+ .answered{
+  padding-bottom: -10%;
+}
+.answerPromptBox{
+  font-size: 25px;
+}
+
+#question-image{
+  border-radius: 25px;
+  border:2px;
+}
